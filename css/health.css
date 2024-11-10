@@ -1,0 +1,76 @@
+.container-health {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.health-header, .benefits, .media, .faq {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    color: white;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.benefits ul {
+    list-style: inside;
+    margin: 10px 0;
+}
+
+.media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.media-item, .video {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.media-item img{
+    height: 200px;
+    object-fit: cover;
+}
+
+img.blurred {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.faq .accordion-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.faq .accordion-content {
+    display: none;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-top: 5px;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .media-item, .video {
+        flex: 1 1 100%;
+    }
+}

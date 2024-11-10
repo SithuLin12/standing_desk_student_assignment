@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chair And Desk Shop</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Welcome modal box start-->
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <h2>Welcome to Comfort & Style!</h2>
+            <p>Discover the perfect blend of comfort and design with our exclusive collection of chairs and desks. Whether you're setting up a cozy home office or upgrading your workspace, we’ve got the ideal furniture to match your style.
+            </p>
+            <button id="closeModalBtn">Close</button>
+        </div>
+      </div>
+    <!-- Welcome modal box end -->
+
+    <!-- Cart Modal Start -->
+    
+      <div id="cartModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>Your Cart</h2>
+          <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+          </div>
+          <div class="cart-total">
+            <h3>Total: <span id="totalAmount">$0</span></h3>
+          </div>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    
+    <!-- Cart Modal End -->
+
+    <!-- Header Section start-->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a class="nav_bar_band_logo" href="index.html">Standing Desks Ltd </a>
+        </div>
+
+        <div>
+          <ul class="nav_bar_items">
+            <li><a class="nav_bar_item" href="./index.html">Home</a></li>
+            <li><a class="nav_bar_item" href="./about.html">About</a></li>
+            <li><a class="nav_bar_item" href="./contact.html">Contact</a></li>
+            <li>
+              <a class="nav_bar_item" href="#menu">Menu</a>
+              <ul class="submenu">
+                <li><a href="./chair.html">Chairs </a></li>
+                <li><a href="./desk.html">Desk </a></li>
+              </ul>
+            </li>
+            <li><a class="nav_bar_item" href="./health.html">Health Benefit</a></li>
+          </ul>
+        </div>
+
+        <a href="javascript:void(0);" class="nav_bar_item action-btn">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="badge">0</span>
+        </a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header Section start-->
+
+    <!-- Hero Banner Section Start-->
+
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img src="./images/banner_two.jpg" alt="Slide 1" />
+          <div class="slide-text">
+            <div class="slide-title">Benefits of a standing desk</div>
+            <div class="slide-description">
+              Work better. Live healthier. Join the standing desk revolution.
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./images/banner_three.jpeg" alt="Slide 2" />
+          <div class="slide-text">
+            <div class="slide-title">Slide 2 Title</div>
+            <div class="slide-description">
+              This is the second slide description.
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./images/banner_four.jpg" alt="Slide 3" />
+          <div class="slide-text">
+            <div class="slide-title">Slide 3 Title</div>
+            <div class="slide-description">
+              This is the third slide description.
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./images/banner_five.jpg" alt="Slide 4" />
+          <div class="slide-text">
+            <div class="slide-title">Slide 4 Title</div>
+            <div class="slide-description">
+              This is the fourth slide description.
+            </div>
+          </div>
+        </div>
+    </div>
+      <!-- Hero Banner Section End-->
+
+      
+        <div class="head">
+          <div class="blinking-text">Hot and Popular Products (Hot Chairs and Popular Chairs)</div>
+        </div>
+
+        <section class="product-list">
+          <div class="container">
+            <!-- Search Box -->
+           
+            <!-- Product Grid -->
+            <div class="product-grid">
+              <!-- Product Item -->
+              <div class="product-item" data-title="Mortis Highback">
+                <div class="product-image">
+                  <img src="./images/products/product_one.png" alt="Product 1" />
+                  <span class="product-price" data-price="109">$109</span>
+                  <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Mortis Highback</h3>
+                  <p class="product-description">
+                    Arc Ergonomic Chair the comfortable choice for you!
+                  </p>
+                  <div class="product-actions">
+                    <a href="#" class="details-btn"><i class="fa-solid fa-eye"></i> Details</a>
+                    <a href="javascript:void(0);" class="shop-btn">Shop</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat Product Item for more products -->
+              <!-- Product Item Example -->
+              <div class="product-item" data-title="Arc Ergonomic Chair">
+                <div class="product-image">
+                  <img src="./images/products/product_three.png" alt="Product 2" />
+                  <span class="product-price" data-price="279">$279</span>
+                  <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Arc Ergonomic Chair</h3>
+                  <p class="product-description">
+                    Arc Ergonomic Chair the comfortable choice for you!
+                  </p>
+                  <div class="product-actions">
+                    <a href="#" class="details-btn"><i class="fa-solid fa-eye"></i> Details</a>
+                    <a href="#" class="shop-btn">Shop</a>
+                  </div>
+                </div>
+              </div>
+      
+      
+              <div class="product-item" data-title="Lever Chair">
+                <div class="product-image">
+                  <img src="./images/products/product_five.png" alt="Product 2" />
+                  <span class="product-price" data-price="379">$379</span>
+                  <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Lever Chair</h3>
+                  <p class="product-description">
+                    Arc Ergonomic Chair the comfortable choice for you!
+                  </p>
+                  <div class="product-actions">
+                    <a href="#" class="details-btn"><i class="fa-solid fa-eye"></i> Details</a>
+                    <a href="#" class="shop-btn">Shop</a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="product-item">
+                <div class="product-image" data-title="Mesh Office Chair">
+                  <img src="./images/products/product_seven.png" alt="Product 2" />
+                  <span class="product-price" data-price="209">$209</span>
+                  <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">Mesh Office Chair</h3>
+                  <p class="product-description">
+                    Arc Ergonomic Chair the comfortable choice for you!
+                  </p>
+                  <div class="product-actions">
+                    <a href="#" class="details-btn"><i class="fa-solid fa-eye"></i> Details</a>
+                    <a href="#" class="shop-btn">Shop</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more products here -->
+            </div>
+          </div>
+        </section>
+
+       
+      <!-- About of Chair Section -->
+      <section id="about" class="about-section">
+        <div class="about-container">
+          <div class="about-image">
+            <img src="./images/about_chair.jpg" alt="Stylish Chair Design">
+          </div>
+          <div class="about-content">
+            <h2>About Our Chair Designs</h2>
+            <p>
+              Discover the perfect blend of style, comfort, and ergonomics with our expertly crafted chair designs.
+              Each piece is thoughtfully engineered to support your body and complement any space. Whether you need a
+              chair for work, relaxation, or dining, our collection offers versatile options that suit your lifestyle.
+            </p>
+            <p>
+              Our chairs are built with high-quality materials and cutting-edge design, ensuring durability and elegance
+              in every detail. Embrace modern living with chairs that not only look great but feel amazing.
+            </p>
+            <a href="#service" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <!-- About of Chair Section -->
+
+
+
+      <!-- About of Chair Section -->
+      <section id="about_two" class="about-section">
+        <div class="about-container">
+          
+          <div class="about-content">
+            <h2>About Our Chair Designs</h2>
+            <p>
+              Discover the perfect blend of style, comfort, and ergonomics with our expertly crafted chair designs.
+              Each piece is thoughtfully engineered to support your body and complement any space. Whether you need a
+              chair for work, relaxation, or dining, our collection offers versatile options that suit your lifestyle.
+            </p>
+            <p>
+              Our chairs are built with high-quality materials and cutting-edge design, ensuring durability and elegance
+              in every detail. Embrace modern living with chairs that not only look great but feel amazing.
+            </p>
+            <a href="#service" class="learn-more-btn">Learn More</a>
+          </div>
+
+          <div class="about-image">
+            <img src="./images/about_chair_two.jpg" alt="Stylish Chair Design">
+          </div>
+        </div>
+      </section>
+      <!-- About of Chair Section -->
+
+      <div class="head">
+        <div class="blinking-text">Hot and Popular Products (Hot Standing Desk and Popular Standing Desk)</div>
+      </div>
+      <section class="product-list">
+        <div class="container">
+          <!-- Search Box -->
+         
+          <!-- Product Grid -->
+          <div class="product-grid">
+            <!-- Product Item -->
+            <div class="product-item" data-title="Mortis Highback">
+              <div class="product-image">
+                <img src="./desk/d_p_one.png" alt="Product 1" />
+                <span class="product-price" data-price="109">$109</span>
+                <a href="#" class="cart-icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Mortis Highback</h3>
+                <p class="product-description">
+                  Arc Ergonomic Chair the comfortable choice for you!
+                </p>
+                <div class="product-actions">
+                  <a href="#" class="details-btn"><i class="fa-solid fa-eye"></i> Details</a>
+                  <a href="javascript:void(0);" class="shop-btn">Shop</a>
+                </div>
+              </div>
+            </div>
+            <!-- Repeat Product Item for more products -->
+            <!-- Product Item Example -->
+            <div class="product-item" data-title="Arc Ergonomic Chair">
+              <div class="product-image">
+                <img src="./desk/d_p_two.png" alt="Product 2" />
+                <span class="product-price" data-price="279">$279</span>
+                <a href="#" class="cart-icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Arc Ergonomic Chair</h3>
+                <p class="product-description">
+                  Arc Ergonomic Chair the comfortable choice for you!
+                </p>
+                <div class="product-actions">
+                  <a href="#" class="details-btn"><i class="fa-solid fa-eye"></i> Details</a>
+                  <a href="#" class="shop-btn">Shop</a>
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="product-item" data-title="Lever Chair">
+              <div class="product-image">
+                <img src="./desk/d_p_three.png" alt="Product 2" />
+                <span class="product-price" data-price="379">$379</span>
+                <a href="#" class="cart-icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Lever Chair</h3>
+                <p class="product-description">
+                  Arc Ergonomic Chair the comfortable choice for you!
+                </p>
+                <div class="product-actions">
+                  <a href="#" class="details-btn"><i class="fa-solid fa-eye"></i> Details</a>
+                  <a href="#" class="shop-btn">Shop</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="product-item">
+              <div class="product-image" data-title="Mesh Office Chair">
+                <img src="./desk/d_p_four.png" alt="Product 2" />
+                <span class="product-price" data-price="209">$209</span>
+                <a href="#" class="cart-icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Mesh Office Chair</h3>
+                <p class="product-description">
+                  Arc Ergonomic Chair the comfortable choice for you!
+                </p>
+                <div class="product-actions">
+                  <a href="#" class="details-btn"><i class="fa-solid fa-eye"></i> Details</a>
+                  <a href="#" class="shop-btn">Shop</a>
+                </div>
+              </div>
+            </div>
+            <!-- Add more products here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section Start -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Chair And Desk Shop</h4>
+              <p>
+                Discover premium quality chairs and desks that bring style, comfort, and functionality to your space.
+              </p>
+            </div>
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Contact Us</h4>
+              <ul>
+                <li>Email: support@chairshop.com</li>
+                <li>Phone: +123 456 7890</li>
+                <li>Address: 123 Chair Street, Furniture City</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Chair And Desk Shop. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer Section End -->
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+ 
+</html>

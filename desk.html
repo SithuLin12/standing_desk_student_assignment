@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chair And Desk Shop About US</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/chair.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+   
+
+    <!-- Header Section start-->
+    <header>
+        <div class="navbar">
+          <div class="logo">
+            <a class="nav_bar_band_logo" href="index.html">Standing Desks Ltd </a>
+          </div>
+  
+          <div>
+            <ul class="nav_bar_items">
+              <li><a class="nav_bar_item" href="./index.html">Home</a></li>
+              <li><a class="nav_bar_item" href="./about.html">About</a></li>
+              <li><a class="nav_bar_item" href="./contact.html">Contact</a></li>
+              <li>
+                <a class="nav_bar_item" href="#menu">Menu</a>
+                <ul class="submenu">
+                  <li><a href="./chair.html">Chairs </a></li>
+                  <li><a href="./desk.html">Desk </a></li>
+                </ul>
+              </li>
+              <li><a class="nav_bar_item" href="./health.html">Health Benefit</a></li>
+            </ul>
+          </div>
+  
+          <a href="javascript:void(0);" class="nav_bar_item action-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="badge">0</span>
+          </a>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </header>
+    <!-- Header Section start-->
+
+
+     <!-- Cart Modal Start -->
+     <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+          <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-total">
+          <h3>Total: <span id="totalAmount">$0</span></h3>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+    <!-- Cart Modal End -->
+
+    <!-- Product list section start -->
+<section class="product-list">
+    <div class="container">
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="text" id="product-search" placeholder="Search products..." />
+      </div>
+      <!-- Product Grid -->
+      <div class="product-grid">
+        <!-- Product Item -->
+        <div class="product-item" data-title="Executive Office Computer Desk">
+          <div class="product-image">
+            <img src="./desk/d_p_one.png" alt="Product 1" />
+            <span class="product-price" data-price="109">$109</span>
+            <a href="#" class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Executive Office Computer Desk</h3>
+            <p class="product-description">
+                Arc Ergonomic Chair the comfortable choice for you!
+            </p>
+            <div class="product-actions">
+              <a href="#" class="details-btn"><i class="fa-solid fa-eye"></i> Details</a>
+              <a href="javascript:void(0);" class="shop-btn">Shop</a>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat Product Item for more products -->
+        <!-- Product Item Example -->
+        <div class="product-item" data-title="Smart Electronic Height Desk">
+          <div class="product-image">
+            <img src="./desk/d_p_two.png" alt="Product 2" />
+            <span class="product-price" data-price="279">$279</span>
+            <a href="#" class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Smart Electronic Height Desk</h3>
+            <p class="product-description">
+                Arc Ergonomic Chair the comfortable choice for you!
+            </p>
+            <div class="product-actions">
+              <a href="#" class="details-btn"><i class="fa-solid fa-eye"></i> Details</a>
+              <a href="#" class="shop-btn">Shop</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="product-item" data-title="Height Adjustable Standing ">
+            <div class="product-image">
+              <img src="./desk/d_p_three.png" alt="Product 2" />
+              <span class="product-price" data-price="379">$379</span>
+              <a href="#" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Height Adjustable Standing </h3>
+              <p class="product-description">
+                Arc Ergonomic Chair the comfortable choice for you!
+              </p>
+              <div class="product-actions">
+                <a href="#" class="details-btn"><i class="fa-solid fa-eye"></i> Details</a>
+                <a href="#" class="shop-btn">Shop</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image"  data-title="Adjustable Table Electric Standing">
+              <img src="./desk/d_p_four.png" alt="Product 2" />
+              <span class="product-price" data-price="209">$209</span>
+              <a href="#" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Adjustable Table Electric Standing</h3>
+              <p class="product-description">
+                Arc Ergonomic Chair the comfortable choice for you!
+              </p>
+              <div class="product-actions">
+                <a href="#" class="details-btn"><i class="fa-solid fa-eye"></i> Details</a>
+                <a href="#" class="shop-btn">Shop</a>
+              </div>
+            </div>
+          </div>
+ 
+
+        <!-- Add more products here -->
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Chair And Desk Shop</h4>
+              <p>
+                Discover premium quality chairs and desks that bring style, comfort, and functionality to your space.
+              </p>
+            </div>
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Contact Us</h4>
+              <ul>
+                <li>Email: support@chairshop.com</li>
+                <li>Phone: +123 456 7890</li>
+                <li>Address: 123 Chair Street, Furniture City</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Chair And Desk Shop. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer Section End -->
+
+    <script src="./js/chair.js"></script>
+  </body>
+</html>
